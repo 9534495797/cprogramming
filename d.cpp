@@ -1,6 +1,7 @@
 #include<stdio.h>
-int main(){
-	int x,y;
-	scanf("%d %d",&x,&y);
-	printf("%d",x+y);
-}
+//int main(){
+//	int a=2,b;
+//	b=a++ + a;
+//	printf("%d",b);
+//}
+
