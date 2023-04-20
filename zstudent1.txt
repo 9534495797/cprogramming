@@ -1,0 +1,3 @@
+reg =12219196
+name =sulabh
+percent =95.000000
