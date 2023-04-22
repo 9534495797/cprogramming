@@ -6,6 +6,8 @@
 //	printf("%d\n",a[i]);
 //}
 //}
+
+
 //int main(){
 //	int a[4]={1,2,3,};
 //	int i;
@@ -41,6 +43,7 @@
 //	sum+=a[i];}
 //	printf("%d\n",sum);	
 //}
+
 
 
 //#include<stdio.h>
@@ -84,7 +87,7 @@
 
 
 //deletion
-//#include<stdio.h>
+#include<stdio.h>
 //int main(){
 //	int a[100],n,i,position;
 //	printf("enter the size");
@@ -104,4 +107,6 @@
 //	}
 //
 //}
+
+
 
