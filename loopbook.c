@@ -1,15 +1,15 @@
 #include<stdio.h>
-//int main(){
-//	char i=97;
-//	for(; ;){
-//		printf("%c",i++);
-//		if(i==107){
-//			goto stop;
-//		}
-//		//goto stop;
-//	}
-//	stop:;
-//}
+int main(){
+	char i=97;
+	for(; ;){
+		printf("%c",i++);
+		if(i==107){
+			goto stop;
+		}
+		//goto stop;
+	}
+	stop:;
+}
 
 
 //int main(){

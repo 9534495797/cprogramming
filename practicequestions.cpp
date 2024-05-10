@@ -59,7 +59,7 @@
 //	}
 //}
 
-//question 6
+//question 6  not giving proper output
 //int main(){
 //	int a,b,c;
 //	scanf("%d",&a);

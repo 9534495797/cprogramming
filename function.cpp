@@ -92,22 +92,74 @@
 
 
 
-#include <stdio.h>
+//#include <stdio.h>
+//
+//int main() {
+//    int num, reversed_num = 0, remainder;
+//
+//    printf("Enter an integer: ");
+//    scanf("%d", &num);
+//
+//    while (num != 0) {
+//        remainder = num % 10;
+//        reversed_num = reversed_num * 10 + remainder;
+//        num /= 10;
+//    }
+//
+//    printf("The reversed number is: %d\n", reversed_num);
+//
+//    return 0;
+//}
 
-int main() {
-    int num, reversed_num = 0, remainder;
+//
+//int add(int ,int);//prototype
+//int main(){
+//	int x=3,y=4,z;
+//	z=add(x,y);  // call
+//	printf("%d",z);
+//}
+//int add(int a, int b){  //defining
+//	return a+b;
+//}
 
-    printf("Enter an integer: ");
-    scanf("%d", &num);
+// same variable in diff func
+//void func();
+//int main(){
+//	int x=3,y=4;
+//	printf("%d %d",x,y);
+//	func();
+//}
+//void func(){
+//	int x=6,y=9;
+//	printf("%d %d ",x,y);
+//	
+//}
 
-    while (num != 0) {
-        remainder = num % 10;
-        reversed_num = reversed_num * 10 + remainder;
-        num /= 10;
-    }
+//int square(int);
+//int main(){
+//	int x=4,y;
+//	y=square(x);
+//	printf("%d",y);
+//	square(x);
+//}
+//int square(int x){
+//	return x*x;
+//}
 
-    printf("The reversed number is: %d\n", reversed_num);
 
-    return 0;
+//factorial
+int fact(int);
+int main(){
+	int x,y;
+	scanf("%d",&x);
+	y=fact(x);
+	printf("%d",y);
 }
-
+int fact(int x){
+	if (x==1){
+		return 1;
+	}
+	else{
+		return x*fact(x-1);
+	}
+}

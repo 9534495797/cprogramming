@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 //int main(){
 //	//In C, a string is an array of characters, terminated by a null character '\0'. Here's an example of a string:
 //	char str[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
@@ -34,10 +35,10 @@
 //You can use the strcmp() function to compare two strings. It returns 0 if the strings are equal, a negative value if the first string is less than the second, and a positive value if the first string is greater than the second. Here's an example:
 //arduino
 int main(){
-	char str1[50] = "Hello";
-char str2[50] = "World";
+	char str1[50] = "vorld";
+char str2[50] = "world";
 int result = strcmp(str1, str2);
-if (result == 0) {
+if (result == 0) { 
   printf("The strings are equal");
 } else if (result < 0) {
   printf("The first string is less than the second");

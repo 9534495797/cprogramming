@@ -8,6 +8,8 @@
 //	
 //}
 
+
+
 //int main(){
 //	FILE *fp;
 //	fp=fopen("pra.txt","w");
@@ -46,6 +48,7 @@
 //	fprintf(fp,"jay ho");
 //	fclose(fp);
 //}
+
 //int main(){
 //	FILE *fp;
 //	char buff[300];
@@ -56,6 +59,28 @@
 //	fclose(fp);
 //	
 //}
+//int main(){
+//	FILE *fp;
+//	fp=fopen("abc.txt","w");
+//	fprintf(fp,"hello world");
+//	fclose(fp);
+//}
+//int main(){
+//	FILE *fp;
+//	fp=fopen("abc.txt","a");
+//	fprintf(fp,"\ni am ankit chaubey\n");
+//	fclose(fp);
+//}
+int main(){
+	FILE *fp;
+	char buff[300];
+	fp=fopen("abc.txt","r");
+	while(fscanf(fp,"%s",buff)!=EOF){
+		printf("%s",buff);
+		
+	}
+	fclose(fp);
+}
 //int main(){
 //	FILE *fp;
 //	fp=fopen("abc.txt","w");
@@ -300,90 +325,90 @@ in update use read and write
 use loops and swich cases
 name roll marks
 */
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#define FILENAME "ca_evaluations.txt"
-#define MAX_SIZE 100
-
-// Structure for CA evaluation
-struct ca_evaluation {
-    char name[MAX_SIZE];
-    int roll;
-    int ca_marks;
-};
-
-// Function to display menu and get user choice
-int menu() {
-    int choice;
-    printf("\nMENU:\n");
-    printf("1. Insert a CA evaluation\n");
-    printf("2. Update a CA evaluation\n");
-    printf("3. Display all CA evaluations\n");
-    printf("4. Delete a CA evaluation\n");
-    printf("5. Exit\n");
-    printf("Enter your choice: ");
-    scanf("%d", &choice);
-    return choice;
-}
-
-// Function to insert a CA evaluation
-void insert() {
-    struct ca_evaluation eval;
-    printf("\nEnter student name: ");
-    scanf("%s", eval.name);
-    printf("Enter student roll: ");
-    scanf("%d", &eval.roll);
-    printf("Enter CA marks: ");
-    scanf("%d", &eval.ca_marks);
-    FILE *fp = fopen(FILENAME, "a");
-    fprintf(fp, "%s %d %d\n", eval.name, eval.roll, eval.ca_marks);
-    fclose(fp);
-    printf("CA evaluation added successfully!\n");
-}
-
-// Function to update a CA evaluation
-void update() {
-    int roll, found = 0;
-    struct ca_evaluation eval;
-    printf("\nEnter student roll to update: ");
-    scanf("%d", &roll);
-    FILE *fp = fopen(FILENAME, "r");
-    FILE *temp = fopen("temp.txt", "w");
-    while (fscanf(fp, "%s %d %d", eval.name, &eval.roll, &eval.ca_marks) != EOF) {
-        if (eval.roll == roll) {
-            found = 1;
-            printf("Enter updated CA marks: ");
-            scanf("%d", &eval.ca_marks);
-            fprintf(temp, "%s %d %d\n", eval.name, eval.roll, eval.ca_marks);
-            printf("CA evaluation updated successfully!\n");
-        }
-        else {
-            fprintf(temp, "%s %d %d\n", eval.name, eval.roll, eval.ca_marks);
-        }
-    }
-    fclose(fp);
-    fclose(temp);
-    remove(FILENAME);
-    rename("temp.txt", FILENAME);
-    if (!found) {
-        printf("CA evaluation not found!\n");
-    }
-}
-
-// Function to display all CA evaluations
-void display() {
-    struct ca_evaluation eval;
-    printf("\nAll CA evaluations:\n");
-    FILE *fp = fopen(FILENAME, "r");
-    while (fscanf(fp, "%s %d %d", eval.name, &eval.roll, &eval.ca_marks) != EOF) {
-        printf("%s %d %d\n", eval.name, eval.roll, eval.ca_marks);
-    }
-    fclose(fp);
-    
-    
-}
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string.h>
+//
+//#define FILENAME "ca_evaluations.txt"
+//#define MAX_SIZE 100
+//
+//// Structure for CA evaluation
+//struct ca_evaluation {
+//    char name[MAX_SIZE];
+//    int roll;
+//    int ca_marks;
+//};
+//
+//// Function to display menu and get user choice
+//int menu() {
+//    int choice;
+//    printf("\nMENU:\n");
+//    printf("1. Insert a CA evaluation\n");
+//    printf("2. Update a CA evaluation\n");
+//    printf("3. Display all CA evaluations\n");
+//    printf("4. Delete a CA evaluation\n");
+//    printf("5. Exit\n");
+//    printf("Enter your choice: ");
+//    scanf("%d", &choice);
+//    return choice;
+//}
+//
+//// Function to insert a CA evaluation
+//void insert() {
+//    struct ca_evaluation eval;
+//    printf("\nEnter student name: ");
+//    scanf("%s", eval.name);
+//    printf("Enter student roll: ");
+//    scanf("%d", &eval.roll);
+//    printf("Enter CA marks: ");
+//    scanf("%d", &eval.ca_marks);
+//    FILE *fp = fopen(FILENAME, "a");
+//    fprintf(fp, "%s %d %d\n", eval.name, eval.roll, eval.ca_marks);
+//    fclose(fp);
+//    printf("CA evaluation added successfully!\n");
+//}
+//
+//// Function to update a CA evaluation
+//void update() {
+//    int roll, found = 0;
+//    struct ca_evaluation eval;
+//    printf("\nEnter student roll to update: ");
+//    scanf("%d", &roll);
+//    FILE *fp = fopen(FILENAME, "r");
+//    FILE *temp = fopen("temp.txt", "w");
+//    while (fscanf(fp, "%s %d %d", eval.name, &eval.roll, &eval.ca_marks) != EOF) {
+//        if (eval.roll == roll) {
+//            found = 1;
+//            printf("Enter updated CA marks: ");
+//            scanf("%d", &eval.ca_marks);
+//            fprintf(temp, "%s %d %d\n", eval.name, eval.roll, eval.ca_marks);
+//            printf("CA evaluation updated successfully!\n");
+//        }
+//        else {
+//            fprintf(temp, "%s %d %d\n", eval.name, eval.roll, eval.ca_marks);
+//        }
+//    }
+//    fclose(fp);
+//    fclose(temp);
+//    remove(FILENAME);
+//    rename("temp.txt", FILENAME);
+//    if (!found) {
+//        printf("CA evaluation not found!\n");
+//    }
+//}
+//
+//// Function to display all CA evaluations
+//void display() {
+//    struct ca_evaluation eval;
+//    printf("\nAll CA evaluations:\n");
+//    FILE *fp = fopen(FILENAME, "r");
+//    while (fscanf(fp, "%s %d %d", eval.name, &eval.roll, &eval.ca_marks) != EOF) {
+//        printf("%s %d %d\n", eval.name, eval.roll, eval.ca_marks);
+//    }
+//    fclose(fp);
+//    
+//    
+//}
 
 //#include<stdio.h>
 //int main();

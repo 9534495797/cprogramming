@@ -54,6 +54,18 @@
 //		//printf("%d %d %s\n",n2.price,n2.year,n2.name);
 //	
 //}
+struct student{
+	char name;
+	int marks;
+}s;
+int main(){
+	printf("enter name=");
+	scanf("%s",&s.name);
+	scanf("%d",&s.marks);
+	printf("%s %d",s.name,s.marks);
+	
+	
+}
 
 
 
@@ -171,46 +183,46 @@
 //}
 
 
-struct students{
-	char name1[25];
-	char name2[25];
-	int reg1;
-	int reg2;
-	int marks1;
-	int marks2;
-	int marks3;
-	int marks4;
-	int marks5;
-	int marks6;
-	int marks7;
-	int marks8;
-	int marks9;
-	int marks10;
-	int marks11;
-	int marks12;
-	
-}n;
-int main(){
-	scanf("%s",&n.name1);
-	scanf("%d",&n.reg1);
-	scanf("%d",&n.marks1);
-	scanf("%d",&n.marks2);
-	scanf("%d",&n.marks3);
-	scanf("%d",&n.marks4);
-	scanf("%d",&n.marks5);
-	scanf("%d",&n.marks6);
-	scanf("%s",&n.name2);
-	scanf("%d",&n.reg2);
-	scanf("%d",&n.marks7);
-	scanf("%d",&n.marks8);
-	scanf("%d",&n.marks9);
-	scanf("%d",&n.marks10);
-	scanf("%d",&n.marks11);
-	scanf("%d",&n.marks12);
-	printf("%s %d %d %d %d %d %d %d\n",n.name1,n.reg1,n.marks1,n.marks2,n.marks3,n.marks4,n.marks5,n.marks6);
-	printf("%s %d %d %d %d %d %d %d\n",n.name2,n.reg2,n.marks7,n.marks8,n.marks9,n.marks10,n.marks11,n.marks12);
-	
-}
+//struct students{
+//	char name1[25];
+//	char name2[25];
+//	int reg1;3
+//	int reg2;
+//	int marks1;
+//	int marks2;
+//	int marks3;
+//	int marks4;
+//	int marks5;
+//	int marks6;
+//	int marks7;
+//	int marks8;
+//	int marks9;
+//	int marks10;
+//	int marks11;
+//	int marks12;
+//	
+//}n;
+//int main(){
+//	scanf("%s",&n.name1);
+//	scanf("%d",&n.reg1);
+//	scanf("%d",&n.marks1);
+//	scanf("%d",&n.marks2);
+//	scanf("%d",&n.marks3);
+//	scanf("%d",&n.marks4);
+//	scanf("%d",&n.marks5);
+//	scanf("%d",&n.marks6);
+//	scanf("%s",&n.name2);
+//	scanf("%d",&n.reg2);
+//	scanf("%d",&n.marks7);
+//	scanf("%d",&n.marks8);
+//	scanf("%d",&n.marks9);
+//	scanf("%d",&n.marks10);
+//	scanf("%d",&n.marks11);
+//	scanf("%d",&n.marks12);
+//	printf("%s %d %d %d %d %d %d %d\n",n.name1,n.reg1,n.marks1,n.marks2,n.marks3,n.marks4,n.marks5,n.marks6);
+//	printf("%s %d %d %d %d %d %d %d\n",n.name2,n.reg2,n.marks7,n.marks8,n.marks9,n.marks10,n.marks11,n.marks12);
+//	
+//}
 
 
 

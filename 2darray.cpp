@@ -94,7 +94,65 @@
 //}
 //}
 
+//int main(){
+//	int x[3][3],i,j;
+//	for(i=0;i<3;i++){
+//		for(j=0;j<3;j++){
+//			printf("x[%d][%d]>>",i,j);
+//			scanf("%d",&x[i][j]);
+//		}
+//	}
+//	for(i=0;i<3;i++){
+//		for(j=0;j<3;j++){
+//			printf("%d",x[j][i]);
+//		}
+//		printf("\n");
+//	}
+//	
+//}
 
+
+
+//int main(){
+//	int x[3][3],i,j;
+//	for(i=0;i<3;i++){
+//		for(j=0;j<3;j++){
+//			printf("x[%d][%d]>>",i,j);
+//			scanf("%d",&x[i][j]);
+//		}
+//	}
+//	for(i=0;i<3;i++){
+//		for(j=0;j<3;j++){
+//			if(i==j){
+//				printf("%d",x[i][j]);
+//			}
+//		}
+//		printf("\n");
+//	}
+//	
+//}
+
+
+
+
+int main(){
+	int x[3][3],i,j;
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			printf("x[%d][%d]>>",i,j);
+			scanf("%d",&x[i][j]);
+		}
+	}
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			if(i+j==3-1){
+				printf("%d",x[i][j]);
+			}
+		}
+		printf("\n");
+	}
+	
+}
 //transpose
 //int main(){
 //	int a[3][3],i,j;
@@ -129,22 +187,22 @@
 //		printf("\n");
 //	}
 //}
-#include<stdio.h>
-int main(){
-	int a[3][3],i,j;
-	for(i=0;i<3;i++){
-		for(j=0;j<3;j++){
-			printf("a[%d][%d]>>",i,j);
-			scanf("%d",&a[i][j]);
-		}
-	}
-	for(i=0;i<3;i++){
-		for (j=0;j<3;j++){
-			printf("%d",a[i][j]);
-		}printf("\n");
-	}
-	
-}
+//#include<stdio.h>
+//int main(){
+//	int a[3][3],i,j;
+//	for(i=0;i<3;i++){
+//		for(j=0;j<3;j++){
+//			printf("a[%d][%d]>>",i,j);
+//			scanf("%d",&a[i][j]);
+//		}
+//	}
+//	for(i=0;i<3;i++){
+//		for (j=0;j<3;j++){
+//			printf("%d",a[i][j]);
+//		}printf("\n");
+//	}
+//	
+//}
 
 
 

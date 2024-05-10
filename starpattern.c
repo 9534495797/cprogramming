@@ -28,14 +28,27 @@
 //}
 
 
-void main(){
-	int k,i,j,x,p=34;
-	printf("enter a number=");
-	scanf("%d",&x);
-	for(j=0;j<=x;j++){
-		gotoxy(p,j+1);
-		for(i=0-j;i<=j;i++)
-		printf("%d",abs(i));
-		p=p-3;
+//void main(){
+//	int k,i,j,x,p=34;
+//	printf("enter a number=");
+//	scanf("%d",&x);
+//	for(j=0;j<=x;j++){
+//		gotoxy(p,j+1);
+//		for(i=0-j;i<=j;i++)
+//		printf("%d",abs(i));
+//		p=p-3;
+//	}
+//}
+
+#include<stdio.h>
+int main(){
+	int n,i,j;
+	printf("enter n=");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+		for(j=1;j<=i;j++){
+			printf("*");
+		}
+		printf("\n");
 	}
 }
